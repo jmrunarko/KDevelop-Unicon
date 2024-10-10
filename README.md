@@ -15,8 +15,11 @@ They have many free books on their disposal.
 
 This repo contains the templates and configuration for using Unicon in KDevelop/Kate.
 
-Hope that it might be usefull for others.
-If you want to add your own template, just follow or edit the one I have.
+It has:
+
+1. syntax highlighting for Unicon
+2. some code snippets for Unicon, which you can adapt that suits your needs.
+3. templates to start a very basic Unicon project, which also can be enhanced easily. If you want to add your own template, just follow or edit the one I have.
 
 Note: create template zip in the folder where the files are, not above that folder.
 
@@ -36,3 +39,6 @@ $HOME/.local/share/ktexteditor_snippets/data
 
 Install syntax highlighting unicon.xml in:
 $HOME/.local/share/org.kde.syntax-highlighting/syntax
+
+
+Hope that this might be usefull for others.
