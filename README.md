@@ -1,3 +1,5 @@
+# KDevelop-Unicon
+
 Unicon is a programming language which IMO I found a lot easier to read and write. 
 I do programming in Pascal, Fortran, C, C++ and Python, but I felt easier to code in Unicon especially when dealing with string and text processing.
 
@@ -25,7 +27,7 @@ Note: create template zip in the folder where the files are, not above that fold
 
 Disclaimer: Use on your own risk!
 
-# KDevelop-Unicon
+
 Using KDevelop to build Unicon projects
 
 Install templates *make.zip or *.gz files in:
