@@ -1,3 +1,14 @@
+Unicon is a programming language which IMO I found a lot easier to read and write. 
+
+I do C, C++, Fortran and Python. It has 2D, 3D Graphics Library. It has a lexx and yacc of it's own, socket library and so on.
+
+You can find more information about Unicon on their website:
+
+http://www.unicon.org/
+
+They have many free books on their disposal.
+
+
 ![Alt Text](https://github.com/jmrunarko/KDevelop-Unicon/blob/main/images/KDevelop-Unicon.gif)
 
 
