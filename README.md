@@ -1,3 +1,6 @@
+Hope that it might be usefull for others.
+Disclaimer: Use on your own risk!
+
 # KDevelop-Unicon
 Using KDevelop to build Unicon projects
 
