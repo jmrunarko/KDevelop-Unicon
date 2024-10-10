@@ -1,6 +1,4 @@
-class %{APPNAME}Class()
-
-local _x, _y, _aString
+class %{APPNAME}Class(_x,_y,_aString)
 
     method %{APPNAME}()
         # code here
