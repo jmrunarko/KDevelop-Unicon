@@ -1,0 +1,482 @@
+<!DOCTYPE language SYSTEM  "language.dtd.xml">
+<language 
+    name="Unicon" 
+    section="Sources" 
+    version="=1.00" 
+    kateversion="2.4" 
+    extensions="*.icn"
+    indenter="cstyle"
+    author="Jos Runarka"
+    license="LGPL"
+    >
+
+<highlighting>
+        <list name="mutabletypes">
+            <item> list </item>
+            <item> Record </item>
+            <item> record </item>
+            <item> table </item>
+            <item> set </item>
+            <item> Object </item>
+            <item> File </item>
+            <item> file </item>
+        </list>
+        <list name="variables">
+            <item> Global </item>
+            <item> global </item>
+            <item> Local </item>
+            <item> local </item>
+            <item> Static </item>
+            <item> static </item>
+            <item> Class </item>
+            <item> class </item>
+        </list>
+        <list name="keywords">
+            <item>&allocated;allocated</item>
+            <item>&ascii;ascii</item>
+            <item>&clock;clock</item>
+            <item>&collections;collections</item>
+            <item>&column;column</item>
+            <item>&cset;cset</item>
+            <item>&current;current</item>
+            <item>&date;date</item>
+            <item>&dateline;dateline</item>
+            <item>&digits;digits</item>
+            <item>&dump;dump</item>
+            <item>&re;re</item>
+            <item>&errno;errno</item>
+            <item>&error;error</item>
+            <item>&errornumber;errornumber</item>
+            <item>&errortext;errortext</item>
+            <item>&errorvalue;errorvalue</item>
+            <item>&errorout;errorout</item>
+            <item>&eventcode;eventcode</item>
+            <item>&eventsource;eventsource</item>
+            <item>&eventvalue;eventvalue</item>
+            <item>&fail;fail</item>
+            <item>&features;features</item>
+            <item>&host;host</item>
+            <item>&input;input</item>
+            <item>&lcase;lcase</item>
+            <item>&letters;letters</item>
+            <item>&level;level</item>
+            <item>&line;line</item>
+            <item>&main;main</item>
+            <item>&now;now</item>
+            <item>&null;null</item>
+            <item>&output;output</item>
+            <item>&phi;phi</item>
+            <item>&pi;pi</item>
+            <item>&pos;pos</item>
+            <item>&progname;progname</item>
+            <item>&random;random</item>
+            <item>&regions;regions</item>
+            <item>&source;source</item>
+            <item>&storage;storage</item>
+            <item>&subject;subject</item>
+            <item>&time;time</item>
+            <item>&trace;trace</item>
+            <item>&ucase;ucase</item>
+            <item>&version;version</item>
+        </list>        
+        <list name="graphicskeywords">
+            <item> col </item>
+            <item> control </item>
+            <item> interval </item>
+            <item> ldrag </item>
+            <item> lpress </item>
+            <item> lrelease </item>
+            <item> mdrag </item>
+            <item> meta </item>
+            <item> mpress </item>
+            <item> mrelease </item>
+            <item> pick </item>
+            <item> rdrag </item>
+            <item> resize </item>
+            <item> row </item>
+            <item> rpress </item>
+            <item> rrelease </item>
+            <item> shift </item>
+            <item> window </item>
+            <item> x </item>
+            <item> y </item>
+        </list>        
+        <list name="controlreservedkeywords">
+            <item> abstract </item>
+            <item> break </item>
+            <item> to </item>
+            <item> by </item>
+            <item> case </item>
+            <item> of </item>
+            <item> do </item>
+            <item> create </item>
+            <item> critical </item>
+            <item> default </item>
+            <item> if </item>
+            <item> then </item>
+            <item> end </item>
+            <item> every </item>
+            <item> fail </item>
+            <item> else </item>
+            <item> import </item>
+            <item> initial </item>
+            <item> initially </item>
+            <item> invocable </item>
+            <item> link </item>
+            <item> method </item>
+            <item> next </item>
+            <item> not </item>
+            <item> package </item>
+            <item> procedure </item>
+            <item> suspend </item>
+            <item> thread </item>
+            <item> repeat </item>
+            <item> return </item>
+            <item> until </item>
+            <item> while </item>
+            <item> overload </item>
+        </list>        
+        <list name="builtinfunctions">
+            <item> abs </item>
+            <item> acos </item>
+            <item> any </item>
+            <item> asin </item>
+            <item> atan </item>
+            <item> atanh </item>
+            <item> asin </item>
+            <item> bal </item>
+            <item> center </item>
+            <item> channel </item>
+            <item> char </item>
+            <item> chdir </item>
+            <item> chmod </item>
+            <item> classname </item>
+            <item> close </item>
+            <item> cofail </item>
+            <item> collect </item>
+            <item> condvar </item>
+            <item> constructor </item>
+            <item> copy </item>
+            <item> cos </item>
+            <item> cset </item>
+            <item> ctime </item>
+            <item> dbcolumns </item>
+            <item> dbdriver </item>
+            <item> dbkeys </item>
+            <item> dblimits </item>
+            <item> dbproducct </item>
+            <item> dbtables </item>
+            <item> delay </item>
+            <item> delete </item>
+            <item> detab </item>
+            <item> display </item>
+            <item> dtor </item>
+            <item> entab </item>
+            <item> errorclear </item>
+            <item> eventmask </item>
+            <item> EvGet </item>
+            <item> EvSend </item>
+            <item> exit </item>
+            <item> exp </item>
+            <item> fetch </item>
+            <item> fieldnames </item>
+            <item> find </item>
+            <item> flock </item>
+            <item> chdir </item>
+            <item> flush </item>
+            <item> function </item>
+            <item> get </item>
+            <item> getch </item>
+            <item> getche </item>
+            <item> getenv </item>
+            <item> gettimeofday </item>
+            <item> globalnames </item>
+            <item> gtime </item>
+            <item> iand </item>
+            <item> icom </item>
+            <item> image </item>
+            <item> insert </item>
+            <item> integer </item>
+            <item> ior </item>
+            <item> ishift </item>
+            <item> istate </item>
+            <item> ixor </item>
+            <item> kbhit </item>
+            <item> key </item>
+            <item> keywords </item>
+            <item> keyword </item>
+            <item> left </item>
+            <item> list </item>
+            <item> load </item>
+            <item> loadfunc </item>
+            <item> localnames </item>
+            <item> lock </item>
+            <item> log </item>
+            <item> many </item>
+            <item> map </item>
+            <item> match </item>
+            <item> max </item>
+            <item> member </item>
+            <item> membernames </item>
+            <item> methodnames </item>
+            <item> methods </item>
+            <item> min </item>
+            <item> mkdir </item>
+            <item> move </item>
+            <item> mutex </item>
+            <item> name </item>
+            <item> numeric </item>
+            <item> open </item>
+            <item> openmask </item>
+            <item> oprec </item>
+            <item> ord </item>
+            <item> paramnames </item>
+            <item> parent </item>
+            <item> pipe </item>
+            <item> pop </item>
+            <item> pos </item>
+            <item> proc </item>
+            <item> pull </item>
+            <item> push </item>
+            <item> put </item>
+            <item> read </item>
+            <item> reads </item>
+            <item> ready </item>
+            <item> real </item>
+            <item> receive </item>
+            <item> remove </item>
+            <item> rename </item>
+            <item> repl </item>
+            <item> reverse </item>
+            <item> right </item>
+            <item> rmdir </item>
+            <item> rtod </item>
+            <item> runerr </item>
+            <item> seek </item>
+            <item> select </item>
+            <item> send </item>
+            <item> seq </item>
+            <item> serial </item>
+            <item> set </item>
+            <item> setenv </item>
+            <item> signal </item>
+            <item> sin </item>
+            <item> sort </item>
+            <item> sortf </item>
+            <item> spawn </item>
+            <item> sql </item>
+            <item> sqrt </item>
+            <item> stat </item>
+            <item> staticnames </item>
+            <item> stop </item>
+            <item> string </item>
+            <item> system </item>
+            <item> tab </item>
+            <item> table </item>
+            <item> tan </item>
+            <item> trap </item>
+            <item> trim </item>
+            <item> truncate </item>
+            <item> trylock </item>
+            <item> type </item>
+            <item> unlock </item>
+            <item> upto </item>
+            <item> uptime </item>
+            <item> utime </item>
+            <item> variable </item>
+            <item> wait </item>
+            <item> where </item>
+            <item> write </item>
+            <item> writes </item>
+            <item> ? </item>
+        </list>        
+        <list name="graphics2dkeywords">
+            <item> Active </item>
+            <item> Alert </item>
+            <item> Bg </item>
+            <item> CenterString </item>
+            <item> Clip </item>
+            <item> Clone </item>
+            <item> Color </item>
+            <item> ColorDialog </item>
+            <item> ColorValue </item>
+            <item> CopyArea </item>
+            <item> Couple </item>
+            <item> DrawArc </item>
+            <item> DrawCircle </item>
+            <item> DrawCurve </item>
+            <item> DrawImage </item>
+            <item> DrawLine </item>
+            <item> DrawPoint </item>
+            <item> Point </item>
+            <item> DrawPolygon </item>
+            <item> DrawRectangle </item>
+            <item> DrawSegment </item>
+            <item> DrawString </item>
+            <item> Enqueue </item>
+            <item> Event </item>
+            <item> Fg </item>
+            <item> FillArc </item>
+            <item> FillCircle </item>
+            <item> FillPolygon </item>
+            <item> FillRectangle </item>
+            <item> Font </item>
+            <item> FreeColor </item>
+            <item> GetEvents </item>
+            <item> GotoRC </item>
+            <item> GotoXY </item>
+            <item> LeftString </item>
+            <item> Lower </item>
+            <item> newColor </item>
+            <item> Notice </item>
+            <item> OpenDialog </item>
+            <item> PaletteChars </item>
+            <item> Palette </item>
+            <item> PaletteGrays </item>
+            <item> PaletteKey </item>
+            <item> Pattern </item>
+            <item> Pending </item>
+            <item> Pixel </item>
+            <item> ProcessEvent </item>
+            <item> Raise </item>
+            <item> ReadImage </item>
+            <item> RightString </item>
+            <item> SaveDialog </item>
+            <item> SelectDialog </item>
+            <item> Shade </item>
+            <item> SubWindow </item>
+            <item> TDraw </item>
+            <item> TDrawto </item>
+            <item> TextDialog </item>
+            <item> TextWidth </item>
+            <item> TFace </item>
+            <item> TGoto </item>
+            <item> THeading </item>
+            <item> THome </item>
+            <item> TInit </item>
+            <item> TLeft </item>
+            <item> ToggleDialog </item>
+            <item> TReset </item>
+            <item> TRestore </item>
+            <item> TRight </item>
+            <item> TSave </item>
+            <item> TScale </item>
+            <item> TSkip </item>
+            <item> TWindow </item>
+            <item> TX </item>
+            <item> TY </item>
+            <item> Uncouple </item>
+            <item> VEcho </item>
+            <item> VGetItems </item>
+            <item> VGetState </item>
+            <item> VSetFont </item>
+            <item> VSetItems </item>
+            <item> VSetState </item>
+            <item> WAttrib </item>
+            <item> WClose </item>
+            <item> WDefault </item>
+            <item> WDelay </item>
+            <item> WDone </item>
+            <item> WFlush </item>
+            <item> WOpen </item>
+            <item> WQuit </item>
+            <item> WRead </item>
+            <item> WReads </item>
+            <item> WriteImage </item>
+            <item> WSync </item>
+            <item> WWrite </item>
+            <item> WWrites </item>
+        </list>        
+        <list name="patternfunctions">
+            <item> Abort </item>
+            <item> Any </item>
+            <item> Arb </item>
+            <item> Arbno </item>
+            <item> Bal </item>
+            <item> Break </item>
+            <item> Breakx</item>
+            <item> Fail </item>
+            <item> Fence </item>
+            <item> Len </item>
+            <item> NotAny </item>
+            <item> Nspan </item>
+            <item> Pos </item>
+            <item> Rem </item>
+            <item> Span </item>
+            <item> Succeed </item>
+            <item> Tab </item>
+            <item> Rpos </item>
+            <item> Rtab </item>
+        </list>        
+        <list name="preprocesorcommands">
+            <item> $define </item>
+            <item> $include </item>
+            <item> $ifdef </item>
+            <item> $else </item>
+            <item> $endif </item>
+            <item> $ifndef </item>
+            <item> $error </item>
+            <item> $undef </item>
+            <item> $line </item>
+        </list>
+        <contexts>
+                <context attribute="Normal Text" lineEndContext="#pop" name="Normal Text" > 
+                        <keyword attribute="Keyword" context="#stay" String="mutabletypes" />
+                        <keyword attribute="Keyword" context="#stay" String="variables" />
+                        <keyword attribute="Keyword" context="#stay" String="builtinfunctions" />
+                        <keyword attribute="Keyword" context="#stay" String="keywords" />
+                        <keyword attribute="Keyword" context="#stay" String="controlreservedkeywords" />
+                        <keyword attribute="Keyword" context="#stay" String="graphicskeywords" />
+                        <keyword attribute="Keyword" context="#stay" String="graphics2dkeywords" />
+                        <keyword attribute="Keyword" context="#stay" String="patternfunctions" />
+                        <keyword attribute="Keyword" context="#stay" String="preprocesorcommands" />
+                        <!-- <RegExpr attribute="Complex" String=" ((([0-9]*\.[0-9]+|[0-9]+\.)|([0-9]+|([0-9]*\.[0-9]+|[0-9]+\.))[eE](\+|-)?[0-9]+)|[0-9]+)[jJ]" context="#stay"/> -->
+                        <Float attribute="Number" context="#stay"/>
+	                    <Int attribute="Number" context="#stay"/>
+                        <DetectChar attribute="String" context="string" char="&quot;" /> 
+                        <DetectChar attribute="Comment" char="#" context="Hash comment"/>
+                        <AnyChar attribute="Operator" String="+*/%\|=;:\!&lt;&gt;!^&amp;~-@" context="#stay"/>
+                        <AnyChar attribute="Symbol" context="#stay" String=":!%&amp;{}()+,-/.*&lt;=&gt;?[]|~^&#59;"/>
+				        <!-- <DetectChar attribute="Symbol" context="#stay" char="{" beginRegion="Brace1"/>
+				        <DetectChar attribute="Symbol" context="#stay" char="}" endRegion="Brace1"/>                             -->
+                        <!--<DetectChar   attribute="Symbol"  context="#pop"  char="{"/>
+                        <DetectChar   attribute="Symbol"  context="#pop"  char="}"/> -->
+                </context>
+                <context attribute="String" lineEndContext="#stay" name="string" > 
+                        <DetectChar attribute="String" context="#pop" char="&quot;" />                    
+                </context>
+
+                <!-- Comments -->
+
+                <context attribute="Comment" lineEndContext="#pop" name="Comment" />
+
+			    <context name="Hash comment" attribute="Comment" lineEndContext="#pop">
+				        <IncludeRules context="##Alerts" />
+				        <IncludeRules context="##Modelines" />
+			    </context>
+
+        </contexts>
+  		<itemDatas> 
+		    <itemData name="Normal Text" defStyleNum="dsNormal" />
+		    <itemData name="Keyword"     defStyleNum="dsKeyword" />
+		    <itemData name="Decimal"     defStyleNum="dsDecVal" />
+		    <itemData name="Float"       defStyleNum="dsFloat" />
+		    <itemData name="Char"        defStyleNum="dsChar" />
+		    <itemData name="String"      defStyleNum="dsString" />
+		    <itemData name="Comment"     defStyleNum="dsComment" />
+		    <itemData name="Symbol"      defStyleNum="dsKeyword"/>
+            <itemData name="Operator"    defStyleNum="dsOperator" spellChecking="false"/>
+			<itemData name="Operator Keyword" defStyleNum="dsKeyword" spellChecking="false"/>
+            <itemData name="Number"      defStyleNum="dsDecVal" />
+        </itemDatas>
+</highlighting>
+
+<general>
+        <comments>
+            <comment name="singleLine" start="#" />
+        </comments>
+        <keywords casesensitive="1"/>
+</general>
+
+</language>
+<!-- kate: indent-width 4; tab-width 4; -->
