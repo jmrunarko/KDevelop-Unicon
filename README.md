@@ -1,4 +1,8 @@
 Hope that it might be usefull for others.
+If you want to add your own template, just follow or edit the one I have.
+
+Note: create template zip in the folder where the files are, not above that folder.
+
 Disclaimer: Use on your own risk!
 
 # KDevelop-Unicon
