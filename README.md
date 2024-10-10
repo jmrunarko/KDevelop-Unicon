@@ -1,5 +1,6 @@
 # KDevelop-Unicon
 
+## Intro
 Unicon is a programming language which IMO I found a lot easier to read and write. 
 I do programming in Pascal, Fortran, C, C++ and Python, but I felt easier to code in Unicon especially when dealing with string and text processing.
 
@@ -28,7 +29,9 @@ Note: create template zip in the folder where the files are, not above that fold
 **Disclaimer: Use on your own risk!**
 
 
-Using KDevelop to build Unicon projects
+# Installation
+
+This is a bit tricky, because I can not forsee what your system preferences are, so you have to find out yourself. Below are the usual location to put data. It's your $HOME/.local/share directory.
 
 Install templates *make.zip or *.gz files in:
 $HOME/.local/share/kdevappwizard/templates
