@@ -10,7 +10,7 @@ You can find more information about Unicon on their website:
 
 http://www.unicon.org/
 
-They have many free books on their disposal.
+They have many free books at their disposal.
 
 
 ![Alt Text](https://github.com/jmrunarko/KDevelop-Unicon/blob/main/images/KDevelop-Unicon.gif)
