@@ -25,7 +25,7 @@ It has:
 
 Note: create template zip in the folder where the files are, not above that folder.
 
-Disclaimer: Use on your own risk!
+**Disclaimer: Use on your own risk!**
 
 
 Using KDevelop to build Unicon projects
