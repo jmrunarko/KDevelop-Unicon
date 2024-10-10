@@ -29,7 +29,7 @@ Note: create template zip in the folder where the files are, not above that fold
 **Disclaimer: Use on your own risk!**
 
 
-# Installation
+## Installation
 
 This is a bit tricky, because I can not forsee what your system preferences are, so you have to find out yourself. Below are the usual location to put data. It's your $HOME/.local/share directory.
 
