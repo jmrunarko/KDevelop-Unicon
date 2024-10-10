@@ -1,0 +1,185 @@
+<snippets name="Unicon_Structures" namespace="" filetypes="Unicon" license="LGPL v3+" authors="Jos Runarka">
+ <script></script>
+ <item>
+  <match>class</match>
+  <fillin>class ${name}(${field_name1},${field_name2}, ${field_name3}) ${cursor}
+
+method ${name}()
+     
+    end
+
+initially;
+    ${field_name1} := 0
+    ${field_name2} := 0
+    ${field_name3} := ""
+end
+</fillin>
+ </item>
+ <item>
+  <match>every</match>
+  <fillin>every ${condition1} do {
+      ${cursor} ${condition2}
+}</fillin>
+ </item>
+ <item>
+  <match>while</match>
+  <fillin>while (${condition1}) do {
+    ${cursor} ${condition2}
+}</fillin>
+ </item>
+ <item>
+  <match>if-then</match>
+  <fillin>if (${condition1}) then { ${cursor} 
+    ${condition2}
+    
+}</fillin>
+ </item>
+ <item>
+  <match>case</match>
+  <fillin>case Type:=${name} of {
+
+"${field_name1}": {${condition1}}${cursor}
+"${field_name2}": {${condition2}}
+default: {${condition3}}
+}
+return 0</fillin>
+ </item>
+ <item>
+  <match>until</match>
+  <fillin>until (${condition1}) do {
+       ${cursor} ${condition2}
+}</fillin>
+ </item>
+ <item>
+  <match>list2record</match>
+  <fillin>record ${name}(${name6},${name7}) ${cursor}
+
+${name1}:= [] 
+${name2} := []
+${name3}   := []
+${name4} := ${name}(${name2},${name3})
+${name5} := table()
+
+every i := 1 to *${name1} do {${name5}[${name1}[i]] := ${name4}.${name6}[i]} 
+
+every i := 1 to *${name1} do {${name5}${name1}[i]] := ${name4}.${name7}[i]} 
+    </fillin>
+ </item>
+ <item>
+  <match>keyevents</match>
+  <fillin>$include "keysyms.icn"
+
+    repeat {
+    while *Pending() > 0 do {
+    case Event() of {
+        Key_Left:	{${condition1}} ${cursor}
+        Key_Up:	    {${condition2}}
+        Key_Right:	{${condition3}} 
+        Key_Down:	{${condition4}}
+        "q": exit() # waits until a 'q' or 'Q' is entered then terminates the program
+        
+        }
+    }
+}</fillin>
+ </item>
+ <item>
+  <match>it-then-else</match>
+  <fillin>if (${condition1}) then { ${cursor} 
+    ${condition2}
+}
+else
+    {${condition3}}</fillin>
+ </item>
+ <item>
+  <match>static-intially</match>
+  <fillin>static ${field_name1}, ${field_name2}, ${field_name3} ${cursor}
+
+initially
+    ${field_name1} := 0
+    ${field_name2} := 0
+    ${field_name3} := "" </fillin>
+ </item>
+ <item>
+  <match>button</match>
+  <fillin>import gui
+$include "guih.icn"
+
+class ${name1}: Dialog(${name1})
+   method component_setup()
+      self.setup()
+   end
+
+   method end_dialog()
+   end
+
+   method init_dialog()
+   end
+
+   method setup()
+      self.set_attribs("size=644,399")
+      ${name1} := TextButton()
+      ${name1}.set_pos(10, 8)
+      ${name1}.clear_toggles()
+      ${name1}.set_label("Button One")
+      ${name1}.set_internal_alignment("c")
+      self.add(${name1})
+   end
+
+   initially
+      self.Dialog.initially()
+end</fillin>
+ </item>
+ <item>
+  <match>fopen</match>
+  <fillin>f := open("${name}", "w") | fail ${cursor}
+
+close(f)</fillin>
+ </item>
+ <item>
+  <match>class-inheritance</match>
+  <fillin>class ${name1} : ${name2} () ${cursor}
+
+    method ${name3}()
+    end
+
+initially
+    ${field_name1} := 0
+    ${field_name2} := 0
+    ${field_name3} := ""
+
+end</fillin>
+ </item>
+ <item>
+  <match>while_line_read</match>
+  <fillin>rewrite := table()
+
+# read the grammar
+
+while line := read() do {
+    line ? {
+        if c := tab(find("->")) then {
+                move(2)
+                rewrite[c] := tab(0)
+        }
+        else if keyword := tab(find(":")) then {
+            move(1)
+            value := tab(0)
+            case keyword of {
+                "something1": something1 := value
+                "something2": something2 := value
+                default: stop(***errorneous keyword:",line)
+        }
+    }
+    else stop("*** invalid line: ", line)
+    }
+}
+            
+            </fillin>
+ </item>
+ <item>
+  <match>class_method</match>
+  <fillin>method ${name}() ${cursor}
+
+end</fillin>
+ </item>
+</snippets>
