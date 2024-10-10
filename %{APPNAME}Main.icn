@@ -1,0 +1,7 @@
+link %{APPNAME}Module
+link %{APPNAME}Class
+
+procedure main()
+    write("Hello World!")
+    plus()
+end
