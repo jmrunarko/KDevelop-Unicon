@@ -4,7 +4,7 @@ Using KDevelop to build Unicon projects
 Install templates *make.zip or *.gz files in:
 $HOME/.local/share/kdevappwizard/templates
 
-Install file templates *.zip or *.gz files in:
+Install file templates icn*.zip or *.gz files in:
 $HOME/.local/share/kdevfiletemplates/templates
 
 Install code snippets *.xml in:
