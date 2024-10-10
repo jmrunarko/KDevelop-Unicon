@@ -1,3 +1,7 @@
+![Alt Text](https://github.com/jmrunarko/KDevelop-Unicon/blob/main/images/KDevelop-Unicon.gif)
+
+
+
 Hope that it might be usefull for others.
 If you want to add your own template, just follow or edit the one I have.
 
