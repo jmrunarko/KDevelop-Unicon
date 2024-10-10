@@ -1,1 +1,2 @@
-*.icn linguist-detectable=true *.xml linguist-detectable=true
+*.icn linguist-detectable=true 
+*.xml linguist-detectable=true
