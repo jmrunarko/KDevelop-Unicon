@@ -1,7 +1,7 @@
 # KDevelop-Unicon
 
 ## Intro
-Unicon is a programming language which IMO I found a lot easier to read and write. 
+Unicon is a programming language which IMO I personally found them a lot easier to read and write. 
 I do programming in Pascal, Fortran, C, C++ and Python, but in my personal opinion I felt easier to code in Unicon especially when dealing with string and text processing.
 
 It has 2D, 3D Graphics Library which can be setup with just a few of lines.
