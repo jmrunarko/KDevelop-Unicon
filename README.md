@@ -23,6 +23,8 @@ It has:
 1. syntax highlighting for Unicon
 2. some code snippets for Unicon, which you can adapt that suits your needs.
 3. templates to start a very basic Unicon project, which also can be enhanced easily. If you want to add your own template, just follow or edit the one I have.
+4. file templates are not parameterized yet. Please refer to the Readme file inside that folder.
+   
 Note: After modifying or creating your templates, create the template zip in the folder where the files are, not above that folder.
 
 
