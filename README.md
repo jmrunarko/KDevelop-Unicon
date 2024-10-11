@@ -14,7 +14,8 @@ http://www.unicon.org/
 They have many free books at their disposal.
 
 
-![Alt Text](https://github.com/jmrunarko/KDevelop-Unicon/blob/main/images/KDevelop-Unicon.gif)
+
+![Alt Text](https://github.com/jmrunarko/KDevelop-Unicon/blob/main/assets/images/KDevelop-Unicon.gif)
 
 This repo contains the templates and configuration for using Unicon in KDevelop/Kate.
 
