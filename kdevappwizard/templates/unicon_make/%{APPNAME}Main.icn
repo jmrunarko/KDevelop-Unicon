@@ -1,6 +1,0 @@
-link %{APPNAME}Module
-
-procedure main()
-    write("Hello World!")
-    plus()
-end

@@ -1,3 +1,0 @@
-procedure plus()
-    write(2+2)
-end
